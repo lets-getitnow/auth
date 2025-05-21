@@ -5,7 +5,7 @@ import { type ClientSchema, a, defineData, defineFunction } from "@aws-amplify/b
 const schema = a.schema({
   Todo: a.model({
     id: a.id().required(),
-  })
+  }).authorization(allow => [allow.publicApiKey()]),
 });
 
 export type Schema = ClientSchema<typeof schema>;
