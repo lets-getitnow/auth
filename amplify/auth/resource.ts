@@ -12,13 +12,14 @@ export const auth = defineAuth({
         clientId: secret('SIWA_CLIENT_ID'),
         keyId: secret('SIWA_KEY_ID'),
         privateKey: secret('SIWA_PRIVATE_KEY'),
-        teamId: secret('SIWA_TEAM_ID')
+        teamId: secret('SIWA_TEAM_ID'),
+        scopes: ['name', 'email'],
       },
       callbackUrls: [
-        'http://localhost:3000/profile',
-        'https://mywebsite.com/profile'
+        'https://main.d1jpnx0fresmf5.amplifyapp.com'
       ],
-      logoutUrls: ['http://localhost:3000/', 'https://mywebsite.com'],
+      logoutUrls: [
+        'https://main.d1jpnx0fresmf5.amplifyapp.com'],
     }
   },
 });
