@@ -17,7 +17,6 @@ export const auth = defineAuth({
       },
       callbackUrls: [
         'https://main.d1jpnx0fresmf5.amplifyapp.com',
-        'https://a74f5bf4a00dec8367a1.auth.us-west-2.amazoncognito.com/oauth2/idpresponse'
       ],
       logoutUrls: [
         'https://main.d1jpnx0fresmf5.amplifyapp.com'],
