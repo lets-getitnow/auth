@@ -16,10 +16,10 @@ export const auth = defineAuth({
         scopes: ['name', 'email'],
       },
       callbackUrls: [
-        'https://main.d1jpnx0fresmf5.amplifyapp.com',
+        'http://localhost:5173',
       ],
       logoutUrls: [
-        'https://main.d1jpnx0fresmf5.amplifyapp.com'],
+        'http://localhost:5173'],
     }
   },
 });
